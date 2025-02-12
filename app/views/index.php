@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $senha = $_POST['senha'];
 
     if ($usuario->logar($email, $senha)) {
-        header("Location: ../config/areaPrivada.php");
+        header("Location: ../configareaPrivada.php");
         exit();
     } else {
         echo "<p '>Usuário ou senha incorretos.</p>";
