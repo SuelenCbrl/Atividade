@@ -1,7 +1,7 @@
 <?php
-require_once '../usuario.php';
+require_once '../config/cliente.php';
 $usuario = new Cliente();
-$usuario->conectar("Beco_Diagonal", "localhost", "root", "");
+$usuario-> conectar("Beco_Diagonal", "localhost", "root", "");
 
 if ($usuario->msgError != "") {
     echo "Erro na conexão: " . $usuario->msgError;

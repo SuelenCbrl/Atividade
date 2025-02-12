@@ -1,7 +1,6 @@
 <?php
-    require_once './app/classes/usuarios/cadastro.php';
+    require_once '../../../app/config/cliente.php';
     $usuario = new Cliente();
-    $usuario->conectar("Beco_Diagonal", "localhost", "root", "");
 ?>
 
 
@@ -34,7 +33,7 @@
         <input type="password" name="cofSenha" id="" placeholder="Confirme sua senha."><br>
 
         <input type="submit" value="CADASTRAR">
-        <a href="index.php">VOLTAR</a>
+        <a href="../../../appviews/index.php">VOLTAR</a>
     </form>
     <?php
         if(isset($_POST['nome']))
@@ -61,7 +60,7 @@
                                 <!-- area do HTML -->
                                 <div id="msn-sucesso-cad">
                                     Cadastrado com Sucesso.
-                                    Clique <a href="index.php">aqui</a>para logar.
+                                    Clique <a href="../../../app/views/index.php">aqui</a>para logar.
                                 </div>
                                 <!-- FIM DA AREA HTML -->
                             <?php
@@ -73,7 +72,7 @@
                                 <!-- area do HTML -->
                                 <div id="msn-sucesso-email">
                                     Email já cadastrado.
-                                    Clique <a href="index.php">aqui</a>para logar.
+                                    Clique <a href="../../views/index.php">aqui</a>para logar.
                                 </div>
                                 <!-- FIM DA AREA HTML -->
                             <?php
@@ -86,7 +85,7 @@
                                 <!-- area do HTML -->
                                 <div id="msn-sucesso-senha">
                                     Senha e Confirmar senha não conferem.
-                                    Clique <a href="index.php">aqui</a>para logar.
+                                    Clique <a href="../../views/index.php">aqui</a>para logar.
                                 </div>
                                 <!-- FIM DA AREA HTML -->
                             <?php
@@ -99,7 +98,7 @@
                                 <!-- area do HTML -->
                                 <div id="msn-sucesso">
                                     <?php echo"Erro:".$usuario->msgError;?>
-                                    Clique <a href="index.php">aqui</a>para logar.
+                                    Clique <a href="../../views/index.php">aqui</a>para logar.
                                 </div>
                                 <!-- FIM DA AREA HTML -->
                             <?php
@@ -112,7 +111,7 @@
                                 <!-- area do HTML -->
                                 <div id="msn-sucesso">
                                     Preencha todos os campos.
-                                    Clique <a href="index.php">aqui</a>para logar.
+                                    Clique <a href="../../views/index.php">aqui</a>para logar.
                                 </div>
                                 <!-- FIM DA AREA HTML -->
                             <?php
