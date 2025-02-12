@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 90%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.base{
+    background-color: black;
+    background-image:url(../img/BecoDiagonal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.area-tabela{
+    width: 90%;
+    height: 75%;
+    margin-left: 20%;
+    background-color: rgba(217, 226, 218, 0.432);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    animation: aniBox 3s infinite;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #000;
+    background-color: #f2f2f274;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}

@@ -1,6 +1,6 @@
 <?php
-require_once '../config/usuario.php';
-$usuario = new Cliente();
+    require_once '../../../app/config/cliente.php';
+    $usuario = new Cliente();
 
 if (isset($_GET['id'])) {
     $id_usuario = $_GET['id'];

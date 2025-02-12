@@ -1,15 +1,12 @@
 <?php
-require_once '../config/usuario.php';
-$usuario = new Cliente();
+    require_once '../../../app/config/cliente.php';
+    $usuario = new Cliente();
 
 if (isset($_GET['id'])) {
     $id_usuario = $_GET['id'];
-
-    // Conecta ao banco de dados
     $usuario->conectar("Beco_Diagonal", "localhost", "root", "");
 
-    // Busca os dados no banco p editar
-    global $pdo; // Torne o PDO acessível
+    global $pdo; 
     $sql = $pdo->prepare("SELECT * FROM cliente WHERE id_usuario = :id");
     $sql->bindValue(":id", $id_usuario);
     $sql->execute();
@@ -23,11 +20,10 @@ if (isset($_POST['nome'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Atualiza os dados no banco 
     $usuario->editar($id_usuario, $nome, $telefone, $email, $senha);
 
     echo "Usuário atualizado com sucesso!";
-    header("Location: areaPrivada.php");
+    header("Location: .areaPrivada.php");
 }
 ?>
 

@@ -17,27 +17,13 @@ $usuarios = $usuario->listarUsuarios();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Usuários</title>
-    <style>
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #000;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="../../public/css/listarcadastro.css">
+    
 </head>
-<body>
-    <h2 style="text-align: center;">Lista de Usuários Cadastrados</h2>
-    <table>
+<body class="base">
+    <div class="area-tabela">
+        <div class="card">
+        <table>
         <thead>
             <tr>
                 <th>ID</th>
@@ -55,8 +41,8 @@ $usuarios = $usuario->listarUsuarios();
                         <td><?php echo $u['nome']; ?></td><br>
                         <td><?php echo $u['telefone']; ?></td><br>
                         <td><?php echo $u['email']; ?></td><br>
-                        <td><a href="../classes/usuarios/editar.php $u['id_usuario'] ?>">Editar</a> |
-                            <a href="../classes/usuarios/excluir.php?= $u['id_usuario'] ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a></td>
+                        <td><a href="../../app/classes/usuarios/editar.php $u['id_usuario'] ?>">Editar</a> |
+                            <a href="../../app/classes/usuarios/excluir.php?= $u['id_usuario'] ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a></td>
                     </tr>
                     
                 <?php endforeach; ?>
@@ -68,8 +54,12 @@ $usuarios = $usuario->listarUsuarios();
         </tbody>
     </table>
     <div style="text-align: center;">
-    <button><a href="index.php"Voltar</a>Voltar</button>
+    <button><a href="index.php">Voltar</button>
     </div>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Lista de Usuários Cadastrados</h2>
+    
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 <?php
-require_once '../config/usuario.php';
+require_once '../config/cliente.php';
 $usuario = new Cliente();
 $usuario-> conectar("Beco_Diagonal", "localhost", "root", "");
 
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $senha = $_POST['senha'];
 
     if ($usuario->logar($email, $senha)) {
-        header("Location: ../configareaPrivada.php");
+        header("Location: areaPrivada.php");
         exit();
     } else {
         echo "<p '>Usuário ou senha incorretos.</p>";
