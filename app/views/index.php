@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                     <label for="senha">Senha</label>
                 </div>
                 <div class="area-BLogar">
-                    <button class="bLogar" onclick="window.location.href='areaPrivada.php'">LOGAR</button>
+                    <button class="bLogar">LOGAR</button>
                 </div>
 
                 <?php if (!empty($mensagemErro)): ?>
