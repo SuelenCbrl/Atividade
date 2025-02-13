@@ -10,10 +10,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="../../../public/css/cadastro.css">
 </head>
-<body>
-    <h2>CADASTRO DE USUARIO</h2>
-    <form action="" method="post">
+<body class="base">
+    <div class="area-blur">
+        <div class="card">
+        <h2>CADASTRO DE USUARIO</h2>
+        <form class="area-cad" action="" method="post">
         <label >Nome</label>
         <input type="text" name="nome" id="" placeholder="Digite seu nome."><br>
 
@@ -34,7 +37,7 @@
 
         <input type="submit" value="CADASTRAR">
         <a href="../../../app/views/index.php">VOLTAR</a>
-    </form>
+        </form>
     <?php
         if(isset($_POST['nome']))
         {
@@ -118,6 +121,9 @@
         }
 
     ?>
+        </div>
+        
 
+    </div>
 </body>
 </html>

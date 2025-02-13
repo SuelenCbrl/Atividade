@@ -37,12 +37,13 @@ $usuarios = $usuario->listarUsuarios();
             <?php if (count($usuarios) > 0): ?>
                 <?php foreach ($usuarios as $u): ?>
                     <tr>
-                        <td><?php echo $u['id_usuario']; ?></td><br>
-                        <td><?php echo $u['nome']; ?></td><br>
-                        <td><?php echo $u['telefone']; ?></td><br>
-                        <td><?php echo $u['email']; ?></td><br>
-                        <td><a href="../../app/classes/usuarios/editar.php $u['id_usuario'] ?>">Editar</a> |
-                            <a href="../../app/classes/usuarios/excluir.php?= $u['id_usuario'] ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a></td>
+                        <td><?php echo $u['id_usuario']; ?></td>
+                        <td><?php echo $u['nome']; ?></td>
+                        <td><?php echo $u['telefone']; ?></td>
+                        <td><?php echo $u['email']; ?></td>
+                        <td><a href="../../app/classes/usuarios/editar.php?id=<?php echo $u['id_usuario']; ?>">Editar</a>
+                        <a href="../../app/classes/usuarios/excluir.php?id=<?php echo $u['id_usuario']; ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
+                        </td>
                     </tr>
                     
                 <?php endforeach; ?>

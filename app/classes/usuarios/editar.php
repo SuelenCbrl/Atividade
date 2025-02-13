@@ -23,7 +23,7 @@ if (isset($_POST['nome'])) {
     $usuario->editar($id_usuario, $nome, $telefone, $email, $senha);
 
     echo "Usuário atualizado com sucesso!";
-    header("Location: .areaPrivada.php");
+    header("Location:../../../app/classes/usuarios/editar.php");
 }
 ?>
 
@@ -51,6 +51,6 @@ if (isset($_POST['nome'])) {
 
         <input type="submit" value="Atualizar">
     </form>
-    <a href="areaPrivada.php">Voltar</a>
+    <a href="../../../app/views/areaPrivada.php">Voltar</a>
 </body>
 </html>

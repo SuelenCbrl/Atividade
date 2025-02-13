@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.base{
+    background-color: black;
+    background-image:url(../img/BecoDiagonal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.area-blur{
+    width: 90%;
+    height: 75%;
+    background-color: rgba(217, 226, 218, 0.432);
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    animation: aniBox 3s infinite;
+}
+.area-cad{
+    border: 2px solid black;
+}
