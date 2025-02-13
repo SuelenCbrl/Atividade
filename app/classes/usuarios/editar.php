@@ -46,9 +46,6 @@ if (isset($_POST['nome'])) {
         <label>Email</label>
         <input type="email" name="email" value="<?= $usuario_data['email'] ?>" required><br><br>
 
-        <label>Senha</label>
-        <input type="password" name="senha" required><br><br>
-
         <input type="submit" value="Atualizar">
     </form>
     <a href="../../../app/views/areaPrivada.php">Voltar</a>

@@ -86,12 +86,28 @@
     font-size: 16px;
     
 }
-.form-login button{
+.form-login .bLogar{
     width: 60%;
     height: 30px;
     border-radius: 5px;
     border: none;
     background-color: seagreen;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4 ease;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.form-login .cadastr{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(212, 198, 0);
     color: white;
     font-size: 16px;
     cursor: pointer;

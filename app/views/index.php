@@ -32,20 +32,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
             <span class="title">LOGIN</span>
             <form action="../views/areaPrivada.php" method="post" class="form-login">
                 <div class="group">
-                    <input type="email" name="email" placeholder="">
+                    <input type="email" name="email" placeholder=""required>
                     <label for="name">Usuário</label>
                 </div>
                 <div class="group">
-                    <input type="password" name="senha" placeholder="">
+                    <input type="password" name="senha" placeholder=""required>
                     <label for="senha">Senha</label>
                 </div>
-                <input type="submit" value="LOGAR">
+                <div class="area-BLogar">
+                    <button class="bLogar" onclick="window.location.href='areaPrivada.php'">LOGAR</button>
+                </div>
 
                 <?php if (!empty($mensagemErro)): ?>
                     <p class="erro-login"><?php echo $mensagemErro; ?></p>
                 <?php endif; ?>
 
-                <a href="../classes/usuarios/cadastro.php">CADASTRE-SE</a>
+                <div class="area-BCadastro">
+                    <button class="cadastr" onclick="window.location.href='cadastro.php'"> CADASTRE-SE</button>
+                </div>
             </form>
 
         </div>
