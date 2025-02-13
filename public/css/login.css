@@ -19,7 +19,7 @@
     width: 90%;
     height: 75%;
     background-color: rgba(217, 226, 218, 0.432);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
