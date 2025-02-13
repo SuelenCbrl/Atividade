@@ -26,17 +26,6 @@
     border-radius: 15px;
     animation: aniBox 3s infinite;
 }
-@keyframes aniBox{
-    0%{
-        box-shadow: none;
-    }
-    50%{
-        box-shadow: 5px 5px 20px 5px rgba(3, 134, 36, 0.829);
-    }
-    100%{
-        box-shadow: none;
-    }
-}
 .card{
     width: 400px;
     height: 500px;
@@ -59,7 +48,6 @@
 .form-login{
     width: 90%;
     height: 70%;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
 }
@@ -72,7 +60,6 @@
     position: absolute;
     top: -10px;
     left: 10px;
-    /* background-color: #fff; */
     transition: all 0.3 ease;
 }
 .form-login .group input{
@@ -126,4 +113,19 @@
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+p.erro-login {
+    border: 2px solid red !important;
+    
+}
+@keyframes aniBox{
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 5px 5px 20px 5px rgba(3, 134, 36, 0.829);
+    }
+    100%{
+        box-shadow: none;
+    }
 }

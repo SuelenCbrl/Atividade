@@ -11,32 +11,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../../../public/css/cadastro.css">
+    <link rel="stylesheet" href="../../../public/css/login.css">
 </head>
 <body class="base">
     <div class="area-blur">
         <div class="card">
-        <h2>CADASTRO DE USUARIO</h2>
+        <span class="title">CADASTRO DE USUARIO</span>
         <form class="area-cad" action="" method="post">
-        <label >Nome</label>
-        <input type="text" name="nome" id="" placeholder="Digite seu nome."><br>
+            <div class="group">
+                <label >Nome</label>
+                <input type="text" name="nome" id="" placeholder="Digite seu nome."><br>
+             </div>
+            <div class="group">
+                <label >Telefone</label>
+                <input type="text" name="tel" id="" placeholder="Digite seu telefone."><br>
+            </div>
+            <div class="group">
+                <label >Email</label>
+                <input type="email" name="email" id="" placeholder="Digite seu email."><br>
+            </div>
 
-        <label >Telefone</label>
-        <input type="tel" name="tel" id="" placeholder="Digite seu telefone."><br>
+            <div class="group">
+                <label >Senha</label>
+                <input type="password" name="senha" id="" placeholder="Digite seu senha."><br>
 
-
-        <label >Email</label>
-        <input type="email" name="email" id="" placeholder="Digite seu email."><br>
-
-
-        <label >Senha</label>
-        <input type="password" name="senha" id="" placeholder="Digite seu senha."><br>
-
-
-        <label >Confirmar Senha</label>
-        <input type="password" name="cofSenha" id="" placeholder="Confirme sua senha."><br>
-
-        <input type="submit" value="CADASTRAR">
-        <a href="../../../app/views/index.php">VOLTAR</a>
+            </div>
+            <div class="group">
+                <label >Confirmar Senha</label>
+                <input type="password" name="cofSenha" id="" placeholder="Confirme sua senha."><br>
+            </div>
+            <input type="submit" value="CADASTRAR">
+            <a href="../../../app/views/index.php">VOLTAR</a>
         </form>
     <?php
         if(isset($_POST['nome']))

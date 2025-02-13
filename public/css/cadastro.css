@@ -26,6 +26,63 @@
     border-radius: 15px;
     animation: aniBox 3s infinite;
 }
-.area-cad{
-    border: 2px solid black;
+.area-cad {
+    font-size: 16px;
+    color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.group{
+    position: relative;
+}
+label{
+    font-size: 15px;
+    color: rgb(3, 79, 79);
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    transition: all 0.3 ease;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(224, 25, 25, 0.829);
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: transparent;
+}
+.area-cad .group input:placeholder-shown+label{
+    top: 10px;
+    background-color: transparent;
+}
+.area-cad .group input:focus{
+    border-color: rgb(139, 0, 0);
+}
+.area-cad .group input:focus+label{
+    top: -10px;
+    left: 10px;
+    background-color: rgba(240, 248, 255 );
+    color: rgb(139, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+.area-cad button{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: seagreen;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4 ease;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
 }

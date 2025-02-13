@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         header("Location: areaPrivada.php");
         exit();
     } else {
-        echo "<p '>Usuário ou senha incorretos.</p>";
+        $mensagemErro = "Usuário ou senha incorretos.";
     }
 }
 ?>
@@ -33,18 +33,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     <div class="area-login">
         <div class="card">
             <span class="title">LOGIN</span>
-            <form action="../views/areaPrivada.php" method="post" class="form-login">
+            <form action="index.php" method="post" class="form-login">
                 <div class="group">
-                    <input type="email" name="email" placeholder=""require>
+                    <input type="email" name="email" placeholder=""required>
                     <label for="name">Usuário</label>
                 </div>
                 <div class="group">
-                    <input type="password" name="senha" placeholder=""require>
+                    <input type="password" name="senha" placeholder=""required>
                     <label for="senha">Senha</label>
                 </div>
                 <input type="submit" value="LOGAR">
+
+                <?php if (!empty($mensagemErro)): ?>
+                    <p class="erro-login"><?php echo $mensagemErro; ?></p>
+                <?php endif; ?>
+
                 <a href="../classes/usuarios/cadastro.php">CADASTRE-SE</a>
             </form>
+
         </div>
         <div class="area-linhas">
             <div class="linha">
