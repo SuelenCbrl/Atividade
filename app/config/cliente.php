@@ -1,7 +1,6 @@
 <?php
     Class Cliente{
         private $pdo;
-
         public $msgError="";
 
         public function conectar($nome, $host, $usuario, $senha){

@@ -56,11 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
             <div class="linha">
                 <span></span>
             </div>
-            <div class="setinhas">
-                <span class="seta">></span>
-                <span class="seta">></span>
-                <span class="seta">></span>
-            </div>
         </div>
         <div class="img-login">
             <img src="../../public/img/02.png" alt="imagem tela de login">
