@@ -1,12 +1,9 @@
 <?php
 require_once '../config/cliente.php';
 $usuario = new Cliente();
-$usuario-> conectar("Beco_Diagonal", "localhost", "root", "");
+$usuario->conectar("Beco_Diagonal", "localhost", "root", "");
 
-if ($usuario->msgError != "") {
-    echo "Erro na conexão: " . $usuario->msgError;
-    exit;
-}
+$mensagemErro = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') 
 {
@@ -33,13 +30,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     <div class="area-login">
         <div class="card">
             <span class="title">LOGIN</span>
-            <form action="index.php" method="post" class="form-login">
+            <form action="../views/areaPrivada.php" method="post" class="form-login">
                 <div class="group">
-                    <input type="email" name="email" placeholder=""required>
+                    <input type="email" name="email" placeholder="">
                     <label for="name">Usuário</label>
                 </div>
                 <div class="group">
-                    <input type="password" name="senha" placeholder=""required>
+                    <input type="password" name="senha" placeholder="">
                     <label for="senha">Senha</label>
                 </div>
                 <input type="submit" value="LOGAR">
