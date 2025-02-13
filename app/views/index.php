@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                 <?php endif; ?>
 
                 <div class="area-BCadastro">
-                    <button class="cadastr" onclick="window.location.href='cadastro.php'"> CADASTRE-SE</button>
+                <a href="../classes/usuarios/cadastro.php">CADASTRE-SE</a>
                 </div>
             </form>
 
